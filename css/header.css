@@ -3,13 +3,11 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
-  }
-
+}
   .navegacao{
       display: flex;
       justify-content: flex-end;
-  }
-  
+  }  
   .logo{
       /* tamanho da caixa da logo */
       display: flex;
@@ -28,10 +26,8 @@
   }
   
   nav ul li{
-      /* estilização das letras e outros elementos da lista de navegacao */
-  
-      display: inline-block;
-      
+      /* estilização das letras e outros elementos da lista de navegacao */  
+      display: inline-block;   
   }
   
   .opcoes{
@@ -102,18 +98,13 @@
 
   header{
       /* esse header está um pouco redundante, tanto faz usar esses parametros abaixo nele ou no id=#menu */
-    
     background-color: #fff;
     margin: 0 auto;
-    width: 80%;
+    width: 100%;
     position: fixed;
     top: 0;
-    left: 10%;
-    
-
   }
   #menu{
-  
     width: 100%;
     padding: 1px;
     border-bottom: #189eb9 1px solid;
