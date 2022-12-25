@@ -3,32 +3,36 @@
     padding: 0;
     box-sizing: border-box;
 }
-  body{
-    display: flex;
-   flex-direction: column;
-   justify-content: center;
-}
+
   /* CORPO DO SITE */
-  #container{
+#container{
     /* container onde está abrigado todos os elementos do site */
     max-width: 1280px;
-    margin: 0 auto;
+    margin-top: 90px;
+    
+    position: absolute;
+    left: 50%; /*empurra para esquerda 50% do tamanho do box1*/
+    top: 50%; /*empurra para esquerda 50% do tamanho do box1.
+    Assim, o canto superior esquerdo do box 2 fica centro do box 1*/
+
+    transform: translate(-50%, -50%); /*volta para cima e para esquerda 50% do seu tamanho (box2)
+    Centralizando o box 2 dentro do box1*/
 }
-
-
-.barra-pesquisa{
+/*.barra-pesquisa{
     display: block;
     width: 450px;
     height: 100px;
-    margin: 100px 10px;
-}
+    margin: 150px 0 10px;
+}*/
 h1, h2{
     color: #189eb9;
 }
+main{
+    height: 80vh;
+}
 .barra-pesquisa input{
-    width: 70px;
+    width: 70%;
     height: 35px;
-
 }
 .barra-pesquisa button{
     background-color: lightblue;
@@ -38,18 +42,17 @@ h1, h2{
     width: 35px;
 }
 .box-categorias{
-    width: 95%;
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    margin-bottom: 70px;
+    justify-content: center;
+    margin-bottom: 10px;
 }
 .categoria{
     background-color: aliceblue;
     width: 100%;
     margin: 5px;
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
 }
 .categoria a{
     width: 100%;
@@ -57,7 +60,7 @@ h1, h2{
 
 .area{
     display: flex;
-    width: 90%;
+   
     height: auto;
     margin: 10px;
 }
@@ -80,7 +83,6 @@ h1, h2{
 width: 300px;
 }
 .imgcarinha img{
-    width: 100%;
     border-radius:150px;
     float: right;
 }
