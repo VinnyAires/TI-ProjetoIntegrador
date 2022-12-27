@@ -45,7 +45,7 @@ main{
     /*divide a tela em várias colunas de 250px para adaptar os cards, tornando a página responsiva*/
     grid-gap: 25px;
 
-    padding-top: 10px;
+    padding-top: 30px;
     max-width: 1600px;
     margin: 0 30px;
     margin-top: 70px;
