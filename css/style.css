@@ -1,155 +1,38 @@
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-
-  
-  .navegacao{
-      display: flex;
-      justify-content: flex-end;
-  }
-  
-  
-  .logo{
-      /* tamanho da caixa da logo */
-      display: flex;
-      width: 70px;
-      border-radius: 45px;
-      float: left;
-      justify-content: flex-start;
-    }
-  
-  .logo img{
-      /* imagem vai ocupar o tamanho da div em que ela está contida */
-      /* arredondei a imagem */
-  
-      width: 100%;  
-      border-radius: 15px;   
-  }
-  
-  
-  nav ul li{
-      /* estilização das letras e outros elementos da lista de navegacao */
-  
-      display: inline-block;
-      
-  }
-  
-  
-  .opcoes{
-      /* CAIXA de texto INterior do top e do Z-index*/
-      display: flex;
-      gap: 3px;      
-      justify-content: end;  
-  }
-  
-  
-  .opcoes li{
-      /*Caixa de texto dos botões superiores topo*/
-      display:list-item;  /* < --- codigo interessante para interações diferenciadas dos botões superiores*/
-      width: 120px;
-      height: 45px;
-      margin-top: 10px;
-      list-style: none;               
-      z-index: 1;
-      transition: all .10s linear;
-      
-  }
-  
-  
-  
-  .opcoes li a{
-      /* CAIXA DE BOTÕES DE SERVIÇOS DO LOGIN*/
-  
-      display: flex;
-      width: 100%;
-      height: 100%;
-      justify-content: center;
-      align-items: center;
-      color: #189eb9;
-      text-decoration: none;
-      font-size:0.8em;
-      transition: all .30s linear;
-      border-radius: 5px;
-      font-weight: bold;
-      background-color: #fff;
-  }
-  
-  
-  .opcoes li:hover > a{
-      background-color: #189eb9;
-      color:#fff;
-  }
-  
-  nav{
-      margin-top: 2px;
-  }
-  
-  .sub-opcao li{
-      /* CAIXA GERAL De sub-opções de serviços e login e
-      espaçamento entre os botões do Z-index */
-      border: 1px #189eb9 solid;
-      border-radius: 5px;
-      display: none;
-      margin-top: 8px;
-      margin-right: 5px;
-      margin-bottom: 5px;   
-  }
-  
-  
-  .opcoes li:hover .sub-opcao li{
-      /*CAIXA GERAL  DOS HOVERS*/
-      display:inline-block;           
-      
-  }
- 
-  /* NAVEGAÇÃO DO SITE */
-
-  header{
-      /* esse header está um pouco redundante, tanto faz usar esses parametros abaixo nele ou no id=#menu */
-    
-    background-color: #fff;
-    margin: 0 auto;
-    width: 80%;
-    position: fixed;
-    top: 0;
-    left: 10%;
-    
-
-  }
-  #menu{
-  
-    width: 100%;
-    padding: 1px;
-    border-bottom: #189eb9 1px solid;
 }
+
   /* CORPO DO SITE */
-  #container{
+#container{
     /* container onde está abrigado todos os elementos do site */
     max-width: 1280px;
-    margin: 0 auto;
-}
+    margin-top: 90px;
+    
+    position: absolute;
+    left: 50%; /*empurra para esquerda 50% do tamanho do box1*/
+    top: 50%; /*empurra para esquerda 50% do tamanho do box1.
+    Assim, o canto superior esquerdo do box 2 fica centro do box 1*/
 
-body{
-    display: flex;
-   flex-direction: column;
-   justify-content: center;
+    transform: translate(-50%, -50%); /*volta para cima e para esquerda 50% do seu tamanho (box2)
+    Centralizando o box 2 dentro do box1*/
 }
-.barra-pesquisa{
+/*.barra-pesquisa{
     display: block;
     width: 450px;
     height: 100px;
-    margin: 100px 10px;
-}
+    margin: 150px 0 10px;
+}*/
 h1, h2{
     color: #189eb9;
 }
+main{
+    height: 80vh;
+}
 .barra-pesquisa input{
-    width: 400px;
+    width: 70%;
     height: 35px;
-
 }
 .barra-pesquisa button{
     background-color: lightblue;
@@ -161,24 +44,27 @@ h1, h2{
 .box-categorias{
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 70px;
+    justify-content: center;
+    margin-bottom: 10px;
 }
 .categoria{
     background-color: aliceblue;
     width: 100%;
-    margin: 10px;
-    width: 200px;
-    height: 200px;
-}
-.area{
-    display: flex;
-    width: auto;
-    height: auto;
-    margin: 10px;
+    margin: 5px;
+    width: 150px;
+    height: 150px;
 }
 .categoria a{
     width: 100%;
 }
+
+.area{
+    display: flex;
+   
+    height: auto;
+    margin: 10px;
+}
+
 .slogan{
     margin-top: 30px;
     width: 350px;
@@ -197,13 +83,12 @@ h1, h2{
 width: 300px;
 }
 .imgcarinha img{
-    width: 100%;
     border-radius:150px;
     float: right;
 }
-.e{
-    display: flex;
-    align-items: center;
+
+.redes{
+    text-align: end;
 }
 footer{
     width: 100%;
@@ -211,6 +96,15 @@ footer{
     background-color: #eee;
    
 }
-.redes{
-    text-align: end;
+@media (max-width: 600px){
+    .barra-pesquisa input{
+        width: 60%;
+    }
+    .box-categorias{
+        justify-content: center;
+    }
+    .area{
+        flex-direction: column;
+        align-items: center;
+    }
 }
