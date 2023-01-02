@@ -4,103 +4,122 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/styleteste.css">
+    <script src="https://kit.fontawesome.com/1e592b5726.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="header/header.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Home</title>
 </head>
 <body>
     <header>
         <div id="menu">
             <div class="logo">
-               <a href="index.html"> <img src="css/xlogo.png" alt="Logo"></a>
+               <a href="#"> <img src="#" alt=""></a>
             </div>
                             
                 <nav>
                     <ul class="opcoes">
-                        <li><a href="index.html">Início</a></li>
-                        <li><a href="#">Sobre</a></li>
-                        <li>
-                            <a target="_self">Serviços</a>
-                            <ul class="sub-opcao">
-                                <li><a href="#">Bábá</a></li>
-                                <li><a href="#">Diarista</a></li>
-                                <li><a href="#">Cuidador de idoso</a></li>
-                                <li><a href="#">Encanador</a></li>
-                                <li><a href="#">Mecânico</a></li>
-                                <li><a href="#">Pedreiro</a></li>
-                                <li><a href="#">Pequenos reparos</a></li>
-                                <li><a href="paginas/servicos/index2.html">Pintor</a></li>
-                                <li><a href="#">Serralheiro</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="paginas/login/pglogin.html" target="_self">Login</a>
-                            <ul class="sub-opcao">
-                                <li><a href="#">Definir status</a></li>
-                                <li><a href="paginas/cadastro/usuario.html">Perfil do usuario</a></li>
-                                <li><a href="paginas/cadastro/funcionario.html" target="_blank">Conta</a></li>
-                                <li><a href="paginas/contato/contato.html">Suporte</a></li>
-                            </ul>
-                        </li> 
+                        <!-- CHECKBOX HACK -->
+                    <input type="checkbox" id="checkbox_toggle" />
+                    <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+                    <!-- NAVEGAÇÃO MENUS -->
+                        <div class="menu">
+
+                            <li><a href="#">Início</a></li>
+                            <li><a target="_self">Sobre</a>
+                                <ul class="sub-opcao">
+                                    <li><a href="paginas/sobre/sobre.html">Sobre Nós</a></li>
+                                    <li><a href="paginas/suporte/suporte.html">Suporte</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a target="_self">Serviços</a>
+                                <ul class="sub-opcao">
+                                    <li><a href="#">Pedreiro</a></li>
+                                    <li><a href="#">Pequenos reparos</a></li>
+                                    <li><a href="#">Pintor</a></li>
+                                    <li><a href="#">Diarista</a>
+                                    <li><a href="paginas/servicos/servico.html">Outros</a></li>
+                                </ul>
+                            </li>
+                            <li><a target="_self">Conta</a>
+                                <ul class="sub-opcao">
+                                    <li><a href="paginas/entrar/pglogin.html">Entrar</a></li>
+                                    <li><a target="_self">Cadastre-se</a> 
+                                        <ul class="cadastro">
+                                            <li><a href="paginas/cadastro/cliente.html" target="_blank">Cliente</a></li>
+                                            <li><a href="paginas/cadastro/colaborador.html" target="_blank">Colaboador</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li> 
+                        </div>
                     </ul>
                 </nav>
             </div>
-    </header> 
-
-    <div class="espacoSup"></div>
-
-<div class="box-corpo">
-    <div class="box1">
-        <a href="index.html"><img src="css/logo.png" alt=""></a>
-    </div>
-    <div class="container">
-        
-        <main >
-        <div>
-            <h1>O que você procura?</h1>
-            <div class="pesquisa">
-                <input id="barra" type="search">
-                    <a id="bot-pesquisa" href="#">Pesquisar</a>
+    </header>
+    
+        <main id="container">
+            <div class="barra-pesquisa">
+                <h1>O que você procura?</h1> <br>
+               
+                <form action="#" method="post">
+                    <input type="search" name="search" id="search" placeholder="Faça Sua Busca" required>
+                    <button type="submit" name=""><i class='fas fa-search'></i></button> 
+                </form>
             </div>
-        </div>
             <div class="box-categorias">
-                <div class="ico-categoria"><a href=""><img src="" alt="">serviço hidraulico</a></div>
-                <div class="ico-categoria"><a href=""><img src="" alt="">serviço eletrico</a></div>
-                <div class="ico-categoria"><a href=""><img src="" alt="">serviço domestico</a></div>
-                <div class="ico-categoria"><a href=""><img src="" alt="">pinturas</a></div>
+                <div class="categoria">
+                    <h3>Serviço Hidráulico</h3>
+                    <a href=""><img src="imgs/hidro.png" alt=""></a>
+                </div>
+                <div class="categoria">
+                    <h3>Serviço Eletrico</h3>
+                    <a href=""><img src="imgs/lampada-eletrica.png" alt=""></a>
+                </div>
+                <div class="categoria">
+                    <div class="titulo-categoria"> 
+                        <h3>Serviço Domestico</h3>
+                    </div>
+                    <div class="icone-categoria">
+                        <a href=""><img src="imgs/vassoura.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="categoria">
+                    <h3>Pinturas</h3>
+                    <a href=""><img src="imgs/rolo-de-pintura.png" alt=""></a>
+                </div>
             </div>
-        
-            <div class="area-slogan">
+            <div class="area">
                 <div class="slogan">
                     <h2>Tudo num só lugar</h2>
                         <br>
-                    <p> Praticidade e segurança na palma da sua mão! Com o aplicativo do <b> Bora Trabalhar, </b> você recebe notificações e avisos em tempo real.</p>
+                    <p> Praticidade e segurança na palma da sua mão! Com o aplicativo do <b> Bora Trabalhar </b>, você recebe notificações e avisos em tempo real.</p>
 
                     <div class="apks">
                         <a href="">
-                            <img src="playstore.png" alt="" class="baixar">
+                            <img src="imgs/playstore.png" alt="" class="baixar">
                         </a>
-                        <a href=""><img src="applestore.png" alt="" class="baixar">
+                        <a href=""><img src="imgs/applestore.png" alt="" class="baixar">
                         </a>
                     </div>
                 </div>
                 
                 <div class="imgcarinha">
-                    <img src="carinha.png" alt="">
+                    <img src="imgs/carinha.png" alt="">
                 </div>
             </div>
-          
+    
+            
         </main>
-    </div>
-    </div>
-        <footer class="footer">
+       <footer>
             <div class="redes">
-                <a href=""><img src="" alt="">facebook</a>
-                <a href=""><img src="" alt="">whatsapp</a>
-                <a href=""><img src="" alt="">instagram</a>
-                <a href=""><img src="" alt="">twitter</a> <br>
-                <a href="paginas/contato/contato.html">contate-nos</a>
+                <a href="https://pt-br.facebook.com/" target="_blank"><img src="icones/facebook.png" alt=""></a>
+                <a href="https://web.whatsapp.com/" target="_blank"><img src="icones/whatsapp.png" alt=""></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="icones/instagram.png" alt=""></a>
+                <a href="https://twitter.com/i/flow/signup" target="_blank"><img src="icones/twitter.png" alt=""></a> <br> 
             </div>
-         </footer>
-
+            <a href="paginas/suporte/suporte.html">contate-nos</a>
+</footer>
+</div>
 </body>
 </html>

@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  header{
+      /* esse header está um pouco redundante, tanto faz usar esses parametros abaixo nele ou no id=#menu */
+    
+    background-color: #fff;
+    margin: 0 auto;
+    width: 80%;
+    position: fixed;
+    top: 0;
+    left: 10%;
+
+  }
+  
+
+.banner{
+    opacity: 75%;
+    width: 100%;
+    height: 600px;
+    background-image: url("https://img.wallpapic-br.com/i2491-537-811/medium/terra-planeta-mundo-espaco-imagem-de-fundo.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.sobre-bt{
+    background-color: #eee;
+    
+}
+
+.sobre-bt1{
+    text-align: center;
+    padding: 70px;
+}
+
+.publico{
+    margin: 20px;
+}
+.conheça{
+    margin: 50px;
+}
+.conheça img{
+    text-align: center;
+    height: 150px;
+    width: 400px;
+    padding: 5px;
+}
+
+
+
+.proposito{
+    display: flex;
+    text-align: center;
+}
+
+.proposito1, .proposito2{
+    border: 1px solid gray;
+    
+    margin: 0 15px 0;
+    text-align: center;
+    background: #fff;
+    box-shadow: 0 2px 4px 1px rgba(0,0,0,.25);
+    border-radius: 8px;
+    padding: 45px;
+}
+
+.quem-somos{
+    border: 1px solid gray;
+    text-align: center;
+    background: #fff;
+    box-shadow: 0 2px 4px 1px rgba(0,0,0,.25);
+    border-radius: 8px;
+    margin: 30px;
+    height: 690px;
+
+}
+
+.quem-somos-1{
+    margin: 20px;
+}
+
+.quem-somos-1 p{
+    margin: 20px;
+}
+
+.quadrados{
+    display: flex;
+}
+
+.quadrados img{
+    margin: 50px;
+    height: 300px;
+    width: 450px;
+}
+
+.quadrados-sub1{
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.paragrafo {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.paragrafo p{
+    margin: 30px;text-align: center;
+}
+
+
+.div-img-texto > h1{
+    color: rgb(0, 0, 0);
+    padding: 90px;
+    
+}
+
+.div-img-texto > p{
+    color: rgb(10, 9, 9);
+    padding: 10px;
+    font-size: 30px;
+}
+
+#img1{
+    opacity: 70%;
+    background-image: url("https://king.host/blog/wp-content/uploads/2018/03/cursos-de-programacao-kinghost.png");
+    background-size: cover;
+    background-attachment: fixed;
+    height: 400px;
+ 
+}
