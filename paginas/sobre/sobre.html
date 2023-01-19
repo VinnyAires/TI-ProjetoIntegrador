@@ -10,70 +10,89 @@
 </head>
 <body>
     <header>
-        
-    </header>
-    <div class="teste-imagem">
-        <img class="banner" src="" alt="">
-    </div>
-    <div class="sobre-bt">
-        <div class="sobre-bt1">
-            <h1>Facilitar a identificação de prestadores de serviços em geral no municipio de <br> imperatriz-ma</h1>
-            <div class="publico">
-                <p>O gruo-alvo da plataforma é a popuçaão da cidade de imperatriz-MA e região, contudo, <br> o site terá uma maior concentração nas pessoas que já contratam os prestadores de serviços em geral como também para as pessoas que são contratadas para efetuarem estes trabalhos.</p>
-                <div class="conheça">
-                   <img src="../../imgs/logo/LOGO BORA TRABALHAR.png" alt="">
-                </div>
-                <div class="proposito">
-                    <div class="proposito1">
-                        <h1>Nosso Propósito</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, ab quisquam fugit ipsam corporis, aliquid error quasi beatae</p>
-                    </div>
-                    <div class="proposito2">
-                        <h1>alguma coisa</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, ab quisquam fugit ipsam corporis, aliquid error quasi beatae</p>
-                    </div>
-                </div>
-                <div class="quem-somos">
-                    <div class="quem-somos-1">
-                        <h1>Quem Somos</h1>
-                        <p>Em essência, somos Simples, Felizes e Sociáveis. Esses são os atributos-chave visíveis em cada passo da jornada</p>
-                    </div>
-                    <div class="quadrados">
-                        <img src="https://images.endeavor.org.br/uploads/2015/05/simples-nacional1.jpg" alt="">
-                        <img src="https://s2.glbimg.com/63RyfB6MLfUIxkTtegPZZ0FOx8g=/e.glbimg.com/og/ed/f/original/2021/03/20/felicidade.jpg" alt="">
-                        <img src="https://media.istockphoto.com/id/1181395720/pt/foto/adult-people-enjoying-dinner.jpg?s=1024x1024&w=is&k=20&c=gA42IBoyatodFcuAUxuqwGi-z8J1vQrDiWJXDJfE598=" alt="">
-                    </div>
-                    <div class="quadrados-sub">
+        <div id="menu">
+            <div class="logo">
+               <a href="../../index.html"> <img src="../../imgs/logo/LOGO BORA TRABALHAR.png" alt=""></a>
+            </div>
                             
-                        <div class="quadrados-sub1">
-                            <h1>Simples</h1>
-                            <h1>Felizes</h1>
-                            <h1>Sociáveis</h1>
+                <nav>
+                    <ul class="opcoes">
+                        <!-- CHECKBOX HACK -->
+                    <input type="checkbox" id="checkbox_toggle" />
+                    <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+                    <!-- NAVEGAÇÃO MENUS -->
+                        <div class="menu">
+
+                            <li><a href="../../index.html">Início</a></li>
+                            <li><a target="_self">Sobre</a>
+                                <ul class="sub-opcao">
+                                    <li><a target="_self">Sobre Nós</a></li>
+                                    <li><a href="../suporte/suporte.html">Suporte</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a target="_self">Serviços</a>
+                                <ul class="sub-opcao">
+                                    <li><a href="../servicos/pedreiros.html">Pedreiro</a></li>
+                                    <li><a href="../servicos/pequenosreparos.html">Pequenos reparos</a></li>
+                                    <li><a href="../servicos/pintores.html">Pintor</a></li>
+                                    <li><a href="../servicos/diarista.html">Diarista</a>
+                                    <li><a href="../servicos/servico.html">Outros</a></li>
+                                </ul>
+                        
+                            <li><a target="_self">Conta</a>
+                                <ul class="sub-opcao">
+                                    <li><a href="paginas/entrar/pglogin.html">Entrar</a></li>
+                                    <li><a target="_self">Cadastre-se</a> 
+                                        <ul class="cadastro">
+                                            <li><a href="../cadastro/cliente.html" target="_blank">Cliente</a></li>
+                                            <li><a href="../cadastro/colaborador.html" target="_blank">Colaboador</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li> 
                         </div>
-                        <div class="testando">
-                            <div class="paragrafo">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, eaque. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci eveniet aspernatur sed </p>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, eaque. 
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, eaque.
-                                </p>
-                                <p>elit. Sint, eaque. loremLorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, eaque.
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing 
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-                <div class="fundo">
-                    <div class="div-img-texto" id="img1">
-                        <h1>"Na essência de todas as lendas existe uma verdade, alguns poucos bravos unidos para salvar seus mundos, podemos ser heróis em nossa própria vida, cada um de nós, se tivermos coragem para tentar.</h1>
-                        <br>
-                        <p>Optimus Prime</p>
-                    </div>
-                </div>
+                    </ul>
+                </nav>
+            </div>
+            
+    </header>
+ 
+    <div class="div-img-texto" id="img1">
+    <div class="paragrafo">
+        <p>Sobre nós<br>
+        Saiba mais sobre o Bora Trabalhar </p>
+    </div>
+    </div>
+    <div class="quem-somos">
+        <h2>Quem Somos</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit nisi omnis repudiandae delectus saepe ipsum beatae deleniti laborum numquam, tenetur tempore explicabo labore eos similique sapiente quas consectetur nostrum quis!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque perferendis reprehenderit nam magni quibusdam voluptatibus! Vel, non, ipsum voluptates consectetur quis recusandae perferendis velit neque dolores qui doloribus omnis nulla.
+        </p><br>
+        <div class="nossa-historia">
+            <h2>Nossa História</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores dignissimos provident at nemo doloribus voluptate nisi, quas reprehenderit in suscipit quae deleniti unde consequuntur facere iste officiis? Maiores, soluta accusamus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, amet! Rerum quod hic animi, sunt ratione enim, ea facere obcaecati neque sint voluptas assumenda sapiente velit excepturi. Libero, error! Consectetur! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi optio provident possimus temporibus ex, quod soluta neque rem nam sequi! Porro adipisci repellat, et molestias nemo minima mollitia officia laudantium?
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt consequuntur dolore qui officia voluptate iusto a, quis provident tempora ad repudiandae at necessitatibus suscipit cupiditate quasi. Iure rem voluptas sequi?
+            </p><br>
+            <div class="fundadores">
+                <h2>Nossos fundadores</h2>
+                <img class="fundadores-img" src="https://senacsenai.com/wp-content/uploads/2022/03/senac-mg.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt atque quasi vel veniam, amet excepturi tempora, eveniet quas vero minima qui quidem? Rem, quas voluptatem quasi eum perspiciatis perferendis quis. lor</p><br>
+                <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut soluta, quas error repellendus quia, blanditiis neque quisquam perferendis ullam officiis minima incidunt quaerat illum iure fugiat enim velit voluptatem! Dignissimos?</p>
+            </div><br>
+            <div class="equipe">
+                <h2>Nossa Equipe</h2>
+                <img class="equipe-img" src="https://www.pe.senac.br/wp-content/uploads/2020/12/Equipe-do-Senac-Vit%C3%B3ria-comemora-os-24-anos-da-unidade.jpg" alt="">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum recusandae dolore, harum est aspernatur quo soluta aut, velit laboriosam fuga laborum libero officia repudiandae cupiditate animi id repellat reiciendis error.</p><br>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut inventore et nisi molestiae earum sed repudiandae soluta recusandae fugiat ipsam magnam, iste natus beatae minus reiciendis incidunt doloremque veritatis sequi.</p>
             </div>
         </div>
-        </div>
     </div>
+    
+    <div id="container">
+            
+    </div>
+    
+    
 </body>
 </html>

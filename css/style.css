@@ -22,22 +22,24 @@ body{
     display: block;
     width: 450px;
     height: 100px;
-    margin: 100px 10px;
+    margin: 100px auto 55px;
 }
 h1, h2{
     color: #189eb9;
 }
 .barra-pesquisa input{
-    width: 400px;
+    width: 90%;
     height: 35px;
+    margin-right: 0;
 } 
 
 .barra-pesquisa button{
     background-color: lightblue;
     cursor: pointer;
-    width: 35px;
+    width: 9%;
  height: 35px;
  border-radius: 5px;
+ margin-left: 0;
 }
 .barra-pesquisa button :hover{
     background-color: #189eb9;
@@ -48,37 +50,47 @@ h1, h2{
 .box-categorias{
     display: flex;
     flex-wrap: wrap;
-    margin-left: 12px;
-    margin-bottom: 70px;
     justify-content: center;
+    margin-left: 12px;
 }
 .categoria{
-    
-    margin: 10px;
-    width: 200px;
+    background-color: aliceblue;
+    margin:  0 auto;
+    width: 150px;
     height: 150px;
     flex-direction: column;
     justify-content: center;
     text-align: center;
 }
-.categoria h3{
-    margin: 6px 0;
-    background-color: #189eb9;
-    color: #fff;
-    border-radius: 3px;
-}
-.categoria a{
+.txt-categoria{
     width: 100%;
+    background-color: #189eb9;
+    margin-top: 0;
+}
+
+.categoria h4{
+    color: #fff;
+}
+.icone-categoria{
+    height: 120px;
+    width: 115px;
+    margin-top: 5px;
+}
+.icone-categoria a{
     display: block;
+    width: 100%;
 }
 .categoria img{
-    width: 100%;
+    width: 100%;    
+    text-align: center;
+    padding: 15px;
+    margin-left: 15px;
 }
 .area{
     display: flex;
     width: auto;
     height: auto;
-    margin: 180px 10px;
+    margin: 80px auto 5px;
 
 }
 .slogan{
@@ -133,13 +145,39 @@ footer > a{
     margin-right: 60px;
     color: red;
 }
-@media (max-width: 750px){
+@media (max-width: 760px){
     .box-categorias{
-        display: flex;
-        margin-left: 0;
+        display: block;
+        columns: 2;
     }
     .categoria{
-        display: flex;
+        margin-bottom: 40px;
     }
-    
+    .area{
+        margin-top: 60px;
+    }
+    .imgcarinha{
+        margin-left: 0px;
+        width: 230px;
+    }
+}
+@media (min-width:410px) and (max-width:600px) {
+    .barra-pesquisa{
+        width: 100%;
+    }
+    .barra-pesquisa input{
+        width: 89%;
+    }
+
+    .area{
+        margin: 40px auto;
+        display: block;
+        flex-direction: column;
+    }
+    .slogan{
+        margin: auto;
+    }
+    .imgcarinha{
+        margin: auto;
+    }
 }

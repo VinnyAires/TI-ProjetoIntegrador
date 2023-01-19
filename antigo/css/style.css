@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+body{
+    display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+  /* CORPO DO SITE */
+  #container{
+    /* container onde está abrigado todos os elementos do site */
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+
+.barra-pesquisa{
+    display: block;
+    width: 450px;
+    height: 100px;
+    margin: 100px 10px;
+}
+h1, h2{
+    color: #189eb9;
+}
+.barra-pesquisa input{
+    width: 400px;
+    height: 35px;
+} 
+
+.barra-pesquisa button{
+    background-color: lightblue;
+    cursor: pointer;
+    width: 35px;
+ height: 35px;
+ border-radius: 5px;
+}
+.barra-pesquisa button :hover{
+    background-color: #189eb9;
+}
+.barra-pesquisa img{
+    width: 35px;
+}
+.box-categorias{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 12px;
+    margin-bottom: 70px;
+    justify-content: center;
+}
+.categoria{
+    
+    margin: 10px;
+    width: 200px;
+    height: 150px;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.categoria h3{
+    margin: 6px 0;
+    background-color: #189eb9;
+    color: #fff;
+    border-radius: 3px;
+}
+.categoria a{
+    width: 100%;
+    display: block;
+}
+.categoria img{
+    width: 100%;
+}
+.area{
+    display: flex;
+    width: auto;
+    height: auto;
+    margin: 180px 10px;
+
+}
+.slogan{
+    margin-top: 30px;
+    width: 350px;
+}
+.apks{
+    width: 300px;
+    display: flex;
+    margin-top: 15px;
+}
+.baixar{
+    width: 100%;
+    margin-top: 10px;
+    padding: 5px;
+}
+.imgcarinha{
+width: 300px;
+margin-left: 70px;
+}
+.imgcarinha img{
+    width: 100%;
+    border-radius:150px;
+    float: right;
+}
+.e{
+    display: flex;
+    align-items: center;
+}
+footer{
+    width: 100%;
+    height: 110px;
+    background-color: #eee;
+    bottom: 0;
+}
+.redes{
+    text-align: end;
+    padding: 10px;
+}
+.redes img{
+    width: 35px;
+    padding: 2px;
+    margin-left: 20px;
+}
+footer > a{
+    display: block;
+    width: 90px;
+    text-decoration: none;
+    border: 1px solid black;
+    text-align: end;
+    float: right;
+    margin-right: 60px;
+    color: red;
+}
+@media (max-width: 750px){
+    .box-categorias{
+        display: flex;
+        margin-left: 0;
+    }
+    .categoria{
+        display: flex;
+    }
+    
+}
